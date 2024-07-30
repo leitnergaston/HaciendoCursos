@@ -33,6 +33,7 @@ ul {
 
 a {
     text-decoration: none;
+    font-size: 15px;
 }
 
 .btn {
@@ -44,6 +45,7 @@ a {
     padding: .5rem .5rem;
     border-radius: .25rem;
     position: relative;
+    cursor: pointer;
 }
 
 .btn:hover {
