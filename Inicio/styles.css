@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --h1-font-size: 2.25rem;
+    --h3-font-size: 1.25rem;
+    --descripcion-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+
+    --color-bg: #f7eae5;
+    --color-text: #292929;
+    --color-hover: #f3974b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    background-color: var(--color-bg);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    background-color: #dadada7e;
+    color: #292929;
+    padding: .5rem .5rem;
+    border-radius: .25rem;
+    position: relative;
+}
+
+.btn:hover {
+    background-color: var(--color-hover);
+}
+
+.btn a {
+    font-size: 1rem;
+}
+
+.container {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Section Courses */
+.sectionCourses {
+    padding: 2rem;
+}
+
+.sectionCourses header {
+    margin-bottom: 1rem;
+}
+
+/* Container Courses */
+.containerCourses {
+    max-width: 1200px;
+    width: 100%;
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.containerCourse {
+    background-color: #ffecae;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    margin: 10px 0;
+}
+
+.imgCourse {
+    width: 150px;
+}
+
