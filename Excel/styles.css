@@ -3,9 +3,9 @@
 
 :root {
     --h1-font-size: 2.25rem;
-    --h3-font-size: 1.25rem;
+    --h3-font-size: 1.30rem;
     --h4-font-size: 1rem;
-    --description-font-size: .5rem;
+    --description-font-size: .9rem;
 
     --color-bg: #f7eae5;
     --color-text: #292929;
@@ -37,12 +37,10 @@ body {
 .btn {
     display: inline-block;
     max-width: 12em;
-    height: 2em;
-    line-height: 2em;
     overflow: hidden;
     cursor: pointer;
     margin: 20px;
-    padding: 0 10px;
+    padding: 5px 10px;
     font-size: 15px;
     z-index: 1;
     background-color: #f0d1c4;
@@ -63,4 +61,51 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.title {
+    font-size: var(--h1-font-size);
+}
+
+.articleContainer {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+.titleContainer {
+    margin-bottom: 10px;
+}
+
+.titleh3 {
+    display: flex;
+    align-items: center;
+    font-size: var(--h3-font-size);
+    color: #418877;
+}
+
+.titleh4 {
+    font-size: var(--h4-font-size);
+    color: #1e497a;
+    text-decoration: underline;
+}
+
+.subtitle {
+    font-size: var(--description-font-size);
+    margin: 0 5px;
+}
+
+.containerCards {
+
+}
+
+.card{
+ 
+}
+
+
+
+
+
+
+
 
