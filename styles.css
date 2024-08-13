@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 :root {
-    --h1-font-size: 2.25rem;
+    --h1-font-size: 1.8rem;
     --h3-font-size: 1.25rem;
     --h4-font-size: 1rem;
     --description-font-size: .5rem;
 
     --color-bg: #f7eae5;
     --color-text: #292929;
-    --color-text-2: #5cbcc9;
+    --color-2: #B7BAD5;
 }
 
 * {
@@ -28,32 +28,38 @@ body {
     background-color: var(--color-bg);
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .hr {
-    border: 1px solid var(--color-text-2);
+    border: 1px solid var(--color-2);
     margin-bottom: 1rem;
 }
 
 .btn {
     display: inline-block;
-    max-width: 12em;
-    height: 2em;
+    width: 150px;
+    height: 45px;
     line-height: 2em;
     overflow: hidden;
     cursor: pointer;
-    margin: 20px;
     padding: 0 10px;
     font-size: 15px;
     z-index: 1;
-    background-color: #f0d1c4;
+    background-color: #A2A5C2;
     color: black;
-    border: 2px solid black;
-    border-radius: 6px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
     position: relative;
     transition: .3s ease;
 }
 
 .btn:hover {
-    background-color: var(--color-text-2);
+    background-color: var(--color-2);
+    filter: drop-shadow(0px 7px 4px rgba(0,0,0,0.33));
     cursor: pointer;
 }
 
@@ -64,12 +70,18 @@ body {
 }
 
 /* Section Courses */
-.sectionCourses {
+.section {
     padding: 2rem;
 }
 
-.sectionCourses header {
+.section header {
     margin-bottom: 1rem;
+}
+
+.title {
+    color: black;
+    margin: 10px 0;
+    font-size: var(--h1-font-size);
 }
 
 /* Container Courses */
@@ -77,28 +89,43 @@ body {
     max-width: 1200px;
     width: 100%;
     padding: 1rem 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: flex;
     gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.containerCourse {
-    background-color: #ffecae;
+.card {
+    width: 255px;
+    height: 300px;
+    background-color: #B7BAD5;
+    border-radius: 6px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
 }
 
-.subtitle {
+.titleCourse {
     display: flex;
     align-items: center;
     justify-content: center;
     color: black;
     margin: 10px 0;
+    font-size: var(--h3-font-size);
 }
 
 .imgCourse {
     width: 100px;
+}
+
+.card a {
+    margin: 20px;
+}
+
+.containerConsultas {
+
 }
 
 
@@ -117,6 +144,8 @@ footer {
 
 footer article {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 20px;
     padding: 20px 50px;
     margin: -99px 20px 20px;
@@ -139,4 +168,13 @@ footer section {
     justify-content: center;
     align-items: center;
     font-weight: bold;
+}
+
+footer article p a {
+    transition: .2s ease;
+}
+
+footer article p a:hover {
+    cursor: pointer;
+    color: var(--color-2);
 }

@@ -76,12 +76,6 @@ body {
     margin-bottom: 10px;
 }
 
-.titleh3 {
-    display: flex;
-    align-items: center;
-    font-size: var(--h3-font-size);
-    color: #418877;
-}
 
 .titleh4 {
     font-size: var(--h4-font-size);
