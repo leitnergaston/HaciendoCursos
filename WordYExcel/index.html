@@ -14,6 +14,13 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="" type="image/x-icon">
 
+    <script>
+        // Verificar si el usuario llegó desde el login
+        if (sessionStorage.getItem('auth') !== 'we.2024') {
+            window.location.href = 'login.html';
+        }
+    </script>
+
 </head>
 
 <body>
