@@ -23,7 +23,7 @@
                 <div class="card">
                     <h3 class="titleCourse">Informática Básica</h3>
                     <img src="img/informaticaBasicaIcon.svg" alt="" class="imgCourse">
-                    <a href="InformaticaBasica/index.html" class="protected-link" data-password="pass1"><button
+                    <a href="Login/index.html" class="protected-link" data-password="pass1"><button
                             class="btn">Ingresar</button></a>
                 </div>
 
@@ -68,24 +68,28 @@
 
             <div class="contactContent">
                 <form action="" method="POST" id="form" class="contactForm">
-                    <div class="inputContainer">
-                        <input type="text" name="nombre" class="input" required>
-                        <label for="">Nombre</label>
+                    <div class="twoPartForm">
+                        <div class="inputContainer">
+                            <input type="text" name="nombre" class="input" placeholder="Ej: Juan" required>
+                            <label for="">Nombre</label>
+                        </div>
+                        <div class="inputContainer">
+                            <input type="text" name="apellido" class="input" placeholder="Ej: Moreno" required>
+                            <label for="">Apellido</label>
+                        </div>
                     </div>
-                    <div class="inputContainer">
-                        <input type="text" name="apellido" class="input" required>
-                        <label for="">Apellido</label>
-                    </div>
-                    <div class="inputContainer">
-                        <input type="email" name="email" class="input" required>
-                        <label for="">Email</label>
-                    </div>
-                    <div class="inputContainer">
-                        <input type="text" name="Curso" class="input">
-                        <label for="">Curso</label>
+                    <div class="twoPartForm">
+                        <div class="inputContainer">
+                            <input type="email" name="email" class="input" placeholder="Ej: juanmoreno@gmail.com" required>
+                            <label for="">Email</label>
+                        </div>
+                        <div class="inputContainer">
+                            <input type="text" name="Curso" class="input" placeholder="Ej: Informática Básica">
+                            <label for="">Curso</label>
+                        </div>
                     </div>
                     <div class="inputContainer textarea">
-                        <textarea name="mensaje" class="input" required></textarea>
+                        <textarea name="mensaje" class="input" placeholder="Ej: Tengo una duda con..." required></textarea>
                         <label for="">Mensaje</label>
                     </div>
                     <button type="submit" class="btn" id="botonEnviar">Enviar</button>
@@ -96,11 +100,13 @@
 
         <footer>
             <article>
-                <p class="update">Última Actualización 13-Ago-24</p>
-                <p><small>
+                <p class="update">Última Actualización 14-Ago-24</p>
+                <p>
+                    <small>
                         <a class="copy" href="https://leitnergaston.netlify.app" target="_blank">Leitner</a>
                         |
-                        <a class="copy" href="https://gonzalescamila.netlify.app" target="_blank">Gonzales</a></small>
+                        <a class="copy" href="https://gonzalescamila.netlify.app" target="_blank">Gonzales</a>
+                    </small>
                 </p>
             </article>
         </footer>
@@ -109,7 +115,7 @@
 
 
 </body>
-<script src="login.js"></script>
+<!-- <script src="login.js"></script> -->
 <script src="main.js"></script>
 <script src="contactForm.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>

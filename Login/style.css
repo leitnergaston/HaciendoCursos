@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --h1-font-size: 1.8rem;
+    --h3-font-size: 1.25rem;
+    --h4-font-size: 1rem;
+    --description-font-size: .5rem;
+
+    --color-bg: #f7eae5;
+    --color-text: #292929;
+    --color-2: #B7BAD5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    background-color: var(--color-bg);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hr {
+    border: 1px solid var(--color-2);
+    margin-bottom: 1rem;
+}
+
+.sectionLogin{
+    padding: 2rem;
+}
+
+.sectionLogin header {
+    margin-bottom: 1rem;
+}
+
+.title {
+    color: black;
+    margin: 10px 0;
+    font-size: var(--h1-font-size);
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+}
+
+.container-login{
+    height: 294px;
+    width: 472px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #81849F;
+    border-radius: 12px;
+}
+
+.info-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-login img{
+    border-radius: 112px;
+}
+
+.info-login form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-input{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container-input label{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.container-input input{
+    height: 44px;
+    width: 315px;
+    background-color: rgba(210, 212, 226, 0.4);
+    border: 1px solid #D2D4E2;
+    border-radius: 6px;
+    padding: 3px 16px;
+    font-size: 26px;
+}
+
+.btn {
+    display: inline-block;
+    width: 122px;
+    height: 38px;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0 10px;
+    z-index: 1;
+    background-color: #D2D4E2;
+    color: black;
+    font-size: 20px;
+    border: 1px solid #695A53;
+    border-radius: 8px;
+    position: relative;
+    transition: .3s ease;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: var(--color-2);
+    filter: drop-shadow(0px 7px 4px rgba(0, 0, 0, 0.33));
+    cursor: pointer;
+}
