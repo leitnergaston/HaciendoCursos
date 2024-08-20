@@ -12,6 +12,13 @@
 
     <!-- FAVICON -->
 
+    <script>
+        // Verificar si el usuario llegó desde el login
+        if (sessionStorage.getItem('auth') !== 'Camseg24') {
+            window.location.href = 'login.html';
+        }
+    </script>
+
 
 </head>
 <body>
