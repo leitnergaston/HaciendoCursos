@@ -3,10 +3,11 @@
 :root {
     --title-font-size: 1.8rem;
     --subtitle-font-size: 1.25rem;
+    --minititle-font-size: 1rem;
 
     --color-bg: #f7eae5;
     --color-primary: #292929;
-    --color-secondary: #b7bad5;
+    --color-secondary: #B7BAD5;
 }
 
 * {
@@ -32,15 +33,15 @@ body {
 }
 
 .btn {
-    display: inline-block;
-    width: 120px;
+    display: flex;
+    align-items: center;
     height: 40px;
     overflow: hidden;
     cursor: pointer;
     padding: 0 10px;
     background-color: #A2A5C2;
     color: black;
-    font-size: 15px;
+    font-size: 16px;
     border: 1px solid black;
     border-radius: 8px;
     position: relative;
@@ -53,6 +54,20 @@ body {
     cursor: pointer;
 }
 
+.icon {
+    font-size: 1.5rem;
+}
+
+.header {
+    position: relative;
+    top: 0.5rem;
+}
+
+.header div {
+    display: flex;
+    justify-content: space-between;
+}
+
 .container {
     width: 100%;
     max-width: 1200px;
@@ -63,36 +78,11 @@ body {
     margin-top: 1rem;
 }
 
-.header {
-    display: flex;
-    align-self: center;
-    justify-content: space-between;
-}
-
-.containerCards {
+.container-cards {
     position: relative;
 }
 
-.contentCard {
-    display: flex;
-    width: 550px;
-    height: 200px;
-    margin: 5px;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    -webkit-box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.5);
-    box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.5);
-}
-
-.subtitle small {
-    font-size: 15px;
-    font-style: italic;
-    font-weight: 600;
-}
-
-.consultasCard {
+.content-card {
     display: flex;
     width: 550px;
     height: 250px;
@@ -100,12 +90,89 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    -webkit-box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.5);
+    border: 1px solid grey;
     box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.5);
 }
 
+.subtitle span {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.img-card {
+    width: 70px;
+}
+
+/*========== TARJETA DE CONSULTA ==========*/
+
+/* contenedor de la card de consula */
+.container-consulta {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+/* Card de consulta */
+.card-consulta {
+    border: 1px solid grey;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 550px;
+    height: 250px;
+    margin: 5px;
+    box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* icono de imagen de la card */
+.img-consulta {
+    width: 70px;
+}
+
+/* contenedor del icono y el titulo */
+.card-consulta div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Icono del ultimo titulo */
+.card-consulta div i {
+    font-size: 1.5rem;
+    color: #600F0F;
+}
+
+.btn-consulta {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #A2A5C2;
+    color: black;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    position: relative;
+    transition: .3s ease;
+}
+
+.btn-consulta:hover {
+    background-color: var(--color-secondary);
+    filter: drop-shadow(0px 7px 4px rgba(0, 0, 0, 0.33));
+    cursor: pointer;
+}
+
+
 .ofertasCard {
+    background-color: #a0a0a0;
+    opacity: 60%;
+    cursor: not-allowed;
     position: absolute;
     top: 0;
     right: 0;
@@ -116,7 +183,12 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    -webkit-box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.5);
+    border: 1px solid grey;
     box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.5);
 }
+
+
+
+
+/*========== FOOTER ==========*/
+

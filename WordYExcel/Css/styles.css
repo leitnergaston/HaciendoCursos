@@ -55,9 +55,20 @@ body {
     cursor: pointer;
 }
 
-/* Iconos de los botone */
+/* Iconos de los botones */
 .icon {
     font-size: 1.5rem;
+}
+
+/* HEADER */
+.header {
+    position: relative;
+    top: .5rem;
+}
+
+.header div {
+    display: flex;
+    justify-content: space-between;
 }
 
 .container {
@@ -68,12 +79,6 @@ body {
 
 .section {
     margin-top: 1rem;
-}
-
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .div-content {
