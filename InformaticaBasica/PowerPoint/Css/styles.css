@@ -133,7 +133,6 @@ body {
     width: 70px;
 }
 
-
 /*========== TARJETA DE CONSULTA ==========*/
 
 /* contenedor de la card de consula */
@@ -197,12 +196,6 @@ body {
     cursor: pointer;
 }
 
-
-
-
-
-
-
 /*========== FOOTER ==========*/
 
 footer {
@@ -255,4 +248,3 @@ footer article {
     background: #333;
     text-decoration: underline;
 }
-
