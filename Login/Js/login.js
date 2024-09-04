@@ -1,5 +1,25 @@
+
 // Hacer foco automáticamente en el campo de contraseña al cargar la página
 document.getElementById('password').focus();
+
+// Script para alternar la visibilidad de la contraseña
+const passwordField = document.getElementById("password");
+const togglePassword = document.querySelector(".icon-password");
+
+togglePassword.addEventListener("click", function() {
+    // Verificar el tipo de input y alternar entre 'password' y 'text'
+    const type = passwordField.getAttribute("type") === "password" ? "text" : "password";
+    passwordField.setAttribute("type", type);
+
+    // Alternar el icono cambiando la clase
+    if (type === "password") {
+        this.classList.remove('uil-eye-slash');
+        this.classList.add('uil-eye');
+    } else {
+        this.classList.remove('uil-eye');
+        this.classList.add('uil-eye-slash');
+    }
+});
 
 // Codigo para el ingreso de contraseña y redireccion a pestaña correspondiente
 document.getElementById("loginForm").addEventListener("submit", function(event) {

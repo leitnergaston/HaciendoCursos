@@ -1,43 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Ingreso</title>
 
     <!-- ESTILOS -->
     <link rel="stylesheet" href="Css/style.css">
 
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
     <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/login-icon.png" type="image/x-icon">
+
 </head>
+
 <body>
+    <header class="header container">
+        <div>
+            <h1 class="title" id="titulo-curso">Ingreso Curso</h1>
+            <a href="/index.html"><button class="btn"><i class="uil uil-corner-up-left-alt icon"></i>Volver al
+                    Inicio</button></a>
+        </div>
+        <hr class="hr">
+    </header>
     <main class="container">
         <section class="sectionLogin">
-            <header>
-                <h1 class="title" id="titulo-curso">Ingreso Curso</h1>
-            </header>
-            <hr class="hr">
-
-        <section class="login">
-            <div class="container-login">
-                <div class="info-login">
-                    <img src="assets/image 27.jpg" alt="User">
-                    <form action="" id="loginForm">
-                        <div class="container-input">
-                            <label for="">Contraseña</label>
-                            <input type="password" name="algo" id="password" required>
-                        </div>
-                        <a href="#">
-                            <button type="submit" class="btn">Ingresar</button>
-                        </a>
-                    </form>
+            <section class="login">
+                <div class="container-login">
+                    <div class="info-login">
+                        <img src="assets/image 27.jpg" alt="User">
+                        <form action="" id="loginForm" class="login-form">
+                            <label class="form-label" for="">Contraseña</label>
+                            <div class="container-input">
+                                <input type="password" id="password" required>
+                                <i class="uil uil-eye icon-password"></i>
+                            </div>
+                            <a href="#">
+                                <button type="submit" class="btn">Ingresar<i class="uil uil-signin icon"></i></button>
+                            </a>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </section>
+                <div class="container-aviso">
+                    <h4>Si olvidaste la contraseña enviá un mensaje al grupo de WhatsApp
+                         o un mail a <a href="mailto:haciendocursos@outlook.com">haciendocursos@outlook.com</a></h4>
+                </div>
+            </section>
+
 
 
         </section>
     </main>
     <script src="Js/login.js"></script>
 </body>
+
 </html>
