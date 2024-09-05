@@ -9,6 +9,9 @@
     <!-- ESTILOS -->
     <link rel="stylesheet" href="Css/style.css">
 
+    <!-- ESTILOS LOADER -->
+     <link rel="stylesheet" href="LoaderLogin/loader.css">
+
     <!-- Iconos -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
@@ -18,6 +21,20 @@
 </head>
 
 <body>
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="dot-spinner">
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+        </div>
+    </div>
+
     <header class="header container">
         <div>
             <h1 class="title" id="titulo-curso">Ingreso Curso</h1>
@@ -54,7 +71,13 @@
 
         </section>
     </main>
+
+    <!-- LOGIN JS -->
     <script src="Js/login.js"></script>
+
+    <!-- LOADER JS -->
+    <script src="LoaderLogin/loader.js"></script>
+
 </body>
 
 </html>
