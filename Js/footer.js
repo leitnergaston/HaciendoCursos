@@ -1,5 +1,5 @@
 // Definir la fecha de la última actualización
-var ultimaActualizacion = "Última Actualización 27-Ago-24";
+var ultimaActualizacion = "Última Actualización 4-Sep-24";
 
 // Actualizar el contenido del footer en todas las páginas
 document.addEventListener("DOMContentLoaded", function() {
