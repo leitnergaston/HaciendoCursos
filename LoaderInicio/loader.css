@@ -1,5 +1,7 @@
 #loader {
   position: fixed;
+  display: flex;
+  flex-direction: column;
   left: 0;
   top: 0;
   width: 100%;
@@ -14,9 +16,9 @@
 }
 
 .dot-spinner {
-  --uib-size: 2.8rem;
+  --uib-size: 3rem;
   --uib-speed: .9s;
-  --uib-color: #183153;
+  --uib-color: #193441;
   position: relative;
   display: flex;
   align-items: center;
@@ -113,6 +115,20 @@
 
   50% {
     transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.img-loader {
+  width: 50%;
+  animation: fade 3s infinite;
+}
+
+@keyframes fade {
+  0%, 100% {
+    opacity: .5;
+  }
+  50% {
     opacity: 1;
   }
 }

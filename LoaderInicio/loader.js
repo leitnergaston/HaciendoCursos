@@ -13,5 +13,5 @@ window.addEventListener('load', function() {
     setTimeout(function() {
         const loader = document.getElementById('loader');
         loader.style.display = 'none';
-    }, 1000); // Espera 1 segundos antes de ocultar el loader
+    }, 2000); // Espera 1 segundos antes de ocultar el loader
 });

@@ -1,5 +1,7 @@
 #loader {
   position: fixed;
+  display: flex;
+  flex-direction: column;
   left: 0;
   top: 0;
   width: 100%;
@@ -14,9 +16,9 @@
 }
 
 .dot-spinner {
-  --uib-size: 2.8rem;
+  --uib-size: 3rem;
   --uib-speed: .9s;
-  --uib-color: #183153;
+  --uib-color: #193441;
   position: relative;
   display: flex;
   align-items: center;
@@ -105,7 +107,6 @@
 }
 
 @keyframes pulse0112 {
-
   0%,
   100% {
     transform: scale(0);
@@ -119,11 +120,16 @@
 }
 
 .img-loader {
-  width: 100%;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -2;
+  width: 50%;
+  animation: fade 3s infinite;
+}
+
+@keyframes fade {
+  0%, 100% {
+    opacity: .5;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 

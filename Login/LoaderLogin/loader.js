@@ -6,6 +6,8 @@
     // loader.style.display = 'none';
 // });
 
+
+
 // loader con tiempo de espera
 // espera el tiempo que carga la pagina y le agrega 1 segundo mas
 // antes de desaparecer el loader
@@ -13,5 +15,5 @@ window.addEventListener('load', function() {
     setTimeout(function() {
         const loader = document.getElementById('loader');
         loader.style.display = 'none';
-    }, 200); // Espera 1 segundos antes de ocultar el loader
+    }, 200); // Espera 0.2 segundos antes de ocultar el loader
 });
