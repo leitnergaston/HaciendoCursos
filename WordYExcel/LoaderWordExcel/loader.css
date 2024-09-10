@@ -132,3 +132,14 @@
     opacity: 1;
   }
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 428px) {
+
+  .img-loader {
+    width: 80%;
+  }
+
+}
+

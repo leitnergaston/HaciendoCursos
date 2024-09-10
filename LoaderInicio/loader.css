@@ -132,3 +132,9 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 428px) {
+  .img-loader {
+    width: 100%;
+  }
+}

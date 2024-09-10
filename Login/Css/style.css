@@ -75,7 +75,7 @@ body {
     margin: 0 auto;
 }
 
-.sectionLogin{
+.sectionLogin {
     padding: 2rem;
 }
 
@@ -83,7 +83,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.login{
+.login {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,7 +92,7 @@ body {
     height: 70vh;
 }
 
-.container-login{
+.container-login {
     height: 294px;
     width: 472px;
     display: flex;
@@ -102,7 +102,7 @@ body {
     border-radius: 12px;
 }
 
-.info-login{
+.info-login {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,29 +110,29 @@ body {
     gap: 10px;
 }
 
-.info-login img{
+.info-login img {
     border-radius: 112px;
 }
 
-.info-login form{
+.info-login form {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
 
-.container-input{
+.container-input {
     position: relative;
     display: flex;
     align-items: center;
 }
 
-.form-label{
+.form-label {
     font-size: 25px;
     font-weight: 400;
 }
 
-.container-input input{
+.container-input input {
     height: 44px;
     width: 315px;
     background-color: rgba(210, 212, 226, 0.4);
@@ -170,4 +170,40 @@ body {
 
 .container-aviso h4 {
     font-size: .9rem;
+}
+
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Pantallas medianas */
+@media (max-width: 768px) {
+    .containerCourses {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 40%;
+    }
+}
+
+/* Pantallas chicas */
+@media (max-width: 428px) {
+
+    .header {
+        max-width: 360px;
+    }
+
+    .header .btn {
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    .container-login {
+        width: 360px;
+        height: 294px;
+    }
+
 }
