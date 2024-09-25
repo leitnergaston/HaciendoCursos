@@ -7,58 +7,133 @@
     <title>Word y Excel</title>
 
     <!-- Estilos -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Css/styles.css">
+
+    <!-- ESTILOS LOADER -->
+    <link rel="stylesheet" href="LoaderWordExcel/loader.css">
 
     <!-- Iconos -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="Assets/img/wordexcel-favicon.svg" type="image/x-icon">
 
 </head>
 
 <body>
+    <!-- LOADER -->
+    <div id="loader">
+        <img src="/AssetsInicio/haciendoCursosLogo-SinFondo-LetraAzul-png.png" alt="" class="img-loader">
+        <div class="dot-spinner">
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+        </div>
+    </div>
+
+    <header class="header container">
+        <div>
+            <h1 class="title">WORD Y EXCEL</h1>
+            <a href="/index.html"><button class="btn"><i class="uil uil-corner-up-left-alt icon"></i>Volver al
+                    Inicio</button></a>
+        </div>
+        <hr class="hr">
+    </header>
     <main class="container">
-        <section class="section">
-            <div class="header">
-                <h1 class="title">WORD Y EXCEL</h1>
-                <a href="/index.html"><button class="btn">Volver al Inicio</button></a>
-            </div>
-            <hr class="hr">
-            <article class="containerCards">
+        <section class="div-content">
+            <article class="container-cards word">
+                <h3 class="subtitle">Archivos Word <span>(Actualizado el 26-Ago-24)</span></h3>
+
+                <!-- Card archivo excel -->
                 <div class="card">
-                    <h3>Archivos Word <span>(Actualizado el 30-jul-24)</span></h3>
-                    <a href=""><button class="btn">Abrir Archivo</button></a>
+                    <h4 class="minititle">Archivo Word Completo</h4>
+                    <img src="Assets/img/word-icon.svg" alt="" class="img-card">
+                    <a href="https://1drv.ms/x/s!Al3xWWn6ONYVgRTTSjC1GzM_5lGp?e=x1b4Ye" target="_blank"><button
+                            class="btn">Abrir Archivo<i class="uil uil-arrow-right icon"></i></button></a>
                 </div>
 
+                <!-- Card instrucciones -->
                 <div class="card">
-                    <h3>Archivos Excel <span>(Actualizado el 30-jul-24)</span></h3>
-                    <a href="https://tinyurl.com/22jcpuln" target="_blank"><button class="btn">Abrir Archivo</button></a>
+                    <h4 class="minititle">Instrucciones para descargar archivo</h4>
+                    <img src="Assets/img/info-icon.svg" alt="" class="img-card">
+                    <a href=""><button class="btn">Ver Instrucciones<i
+                                class="uil uil-arrow-right icon"></i></button></a>
                 </div>
 
-                <div class="card">
-                    <h3>Examen Excel <span>(Actualizado el 30-jul-24)</span></h3>
-                    <p>Libro de excel con 4 hojas del modelo del examen y otras 4 hojas del modelo resuelto</p>
-                    <a href="https://tinyurl.com/2brcajqr" target="_blank"><button class="btn">Abrir Archivo</button></a>
-                </div>
-
-                <div class="card">
-                    <h3>Instrucciones de como descargar los archivos</h3>
-                    <div class="containerLinks">
-                        <a href="" target="_blank"><button class="btn">Instrucciones Word</button></a>
-                        <a href="/pdf/InstruccionesExcel.pdf" target="_blank"><button class="btn">Instrucciones Excel</button></a>
-                        <a href="/pdf/InstruccionesExcel.pdf" target="_blank"><button class="btn">Instrucciones Examen</button></a>
-                    </div>
-                </div>
             </article>
+
+            <hr>
+
+            <article class="container-cards excel">
+                <h3 class="subtitle">Archivos Excel <span>(Actualizado el 26-Ago-24)</span></h3>
+
+                <div class="card">
+                    <h4 class="minititle">Archivo Excel Completo</h4>
+                    <img src="Assets/img/excel-icon.svg" alt="" class="img-card">
+                    <a href="https://tinyurl.com/22jcpuln" target="_blank"><button class="btn">Abrir Archivo<i
+                                class="uil uil-arrow-right icon"></i></button></a>
+                </div>
+
+                <div class="card">
+                    <h4 class="minititle">Examen Excel Completo</h4>
+                    <img src="Assets/img/examenExcel-icon.svg" alt="" class="img-card">
+                    <a href="https://tinyurl.com/2brcajqr" target="_blank"><button class="btn">Abrir Archivo<i
+                                class="uil uil-arrow-right icon"></i></button></a>
+                </div>
+
+                <!-- Card instrucciones -->
+                <div class="card">
+                    <h4 class="minititle">Instrucciones para descargar archivos</h4>
+                    <img src="Assets/img/info-icon.svg" alt="" class="img-card">
+                    <a href=""><button class="btn">Ver Instrucciones<i
+                                class="uil uil-arrow-right icon"></i></button></a>
+                </div>
+
+            </article>
+
+            <hr>
+
         </section>
 
 
-        <footer>
+        <!-- Tarjeta de consulta -->
+        <!-- div que contiene la card de consulta -->
+        <div class="container-consulta">
+            <div class="card-consulta">
+                <h3>Para problemas, dudas o consultas</h4>
+                    <img src="/AssetsInicio/whatsappIcon.svg" alt="" class="img-consulta">
+                    <a href="#"><button class="btn-consulta">Enviar WhatsApp<i class="uil uil-message"></i></button></a>
+            </div>
+        </div>
 
-        </footer>
+
+
     </main>
 
+    <!-- Footer -->
+    <footer>
+        <article>
+            <p class="update" id="footer-date">Fecha de actualizacion aqui</p>
+            <p>
+                <small>
+                    <a href="leitnergaston.netlify.app" target="_blank" class="copy">Leitner</a>
+                    |
+                    <a href="gonzalescamila.netlify.app" target="_blank" class="copy">Gonzales</a>
+                </small>
+            </p>
+        </article>
+    </footer>
 
+    <!-- FOOTER JS -->
+    <script src="/JsInicio/footer.js"></script>
+
+    <!-- LOADER JS -->
+    <script src="LoaderWordExcel/loader.js"></script>
 </body>
 
 </html>

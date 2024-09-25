@@ -1,42 +1,175 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camaras Seguridad</title>
 
     <!-- ESTILOS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Css/styles.css">
+
+    <!-- ESTILOS LOADER -->
+    <link rel="stylesheet" href="LoaderCamaras/loader.css">
 
     <!-- ICONOS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
     <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/camarasSeguridadCurso-favicon.png" type="image/x-icon">
 
 
 </head>
+
+<!-- BODY NUEVO -->
 <body>
+    <!-- LOADER -->
+    <div id="loader">
+        <img src="/AssetsInicio/haciendoCursosLogo-SinFondo-LetraAzul-png.png" alt="" class="img-loader">
+        <div class="dot-spinner">
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+        </div>
+    </div>
+
+    <img src="/AssetsInicio/haciendoCursosLogo-SinFondo-LetraAzul-png.png" alt="" class="logotipo">
+
+    <header class="header container">
+        <div>
+            <h1 class="title">Camaras de Seguridad</h1>
+            <a href="/index.html"><button class="btn"><i class="uil uil-corner-up-left-alt icon"></i>Volver al
+                    Inicio</button></a>
+        </div>
+        <hr class="hr">
+    </header>
     <main class="container">
-        <section class="section">
-            <div class="header">
-                <h1 class="title">Camaras de Seguridad</h1>
-                <a href="/index.html"><button class="btn">Volver al Inicio</button></a>
-            </div>
-            <hr class="hr">
-            <article class="containerCards">
-                <div class="contentCard">
-                    <h3 class="subtitle">Contenido del Curso <small>(Actualizado el 19-Ago-24)</small></h3>
-                    <div class="containerButtons">
-                        <a href=""><button class="btn">Material PDF</button></a>
-                    </div>
+        <section class="div-content">
+            <article class="container-cards">
+                <h3 class="subtitle">Contenido del curso <span>(Actualizado el 9-Sep-24)</span></h3>
+
+                <!-- Card archivo pdf -->
+                <div class="card">
+                    <h4 class="minititle">Archivo PDF Completo</h4>
+                    <img src="assets/document-icon.svg" alt="" class="img-card">
+                    <a href="assets/CamarasDeSeguridad.pdf" download><button
+                            class="btn">Descargar PDF<i class="uil uil-file-download icon"></i></button></a>
                 </div>
-                <div class="consultasCard">
-                    <h3 class="subtitle">Consultas</h3>
+
+                <!-- Card instrucciones -->
+                <div class="card">
+                    <h4 class="minititle">Instrucciones para descargar archivo</h4>
+                    <img src="assets/info-icon.svg" alt="" class="img-card">
+                    <a href="assets/intruccionesDescargarPdf.pdf" target="_blank"><button class="btn">Ver Instrucciones<i
+                                class="uil uil-arrow-right icon"></i></button></a>
                 </div>
-                <div class="ofertasCard">
-                    <h3 class="subtitle">Ofertas</h3>
-                </div>
+
             </article>
+
+            <hr>
+            
         </section>
+
+        <!-- Tarjeta de consulta -->
+        <!-- div que contiene la card de consulta -->
+        <div class="container-consulta">
+            <div class="card-consulta">
+                <h3>Para problemas, dudas o consultas</h4>
+                    <img src="assets/whatsapp-icon.svg" alt="" class="img-consulta">
+                    <a href="https://chat.whatsapp.com/Cz7ncebH0RQ1jIxDCHcP1i" target="_blank"><button class="btn-consulta">Enviar WhatsApp<i class="uil uil-message"></i></button></a>
+            </div>
+        </div>
+
+
+
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <article>
+            <p class="update" id="footer-date">Fecha de actualizacion aqui</p>
+            <p>
+                <small>
+                    <a href="leitnergaston.netlify.app" target="_blank" class="copy">Leitner</a>
+                    |
+                    <a href="gonzalescamila.netlify.app" target="_blank" class="copy">Gonzales</a>
+                </small>
+            </p>
+        </article>
+    </footer>
+
+    <!-- FOOTER JS -->
+    <script src="/JsInicio/footer.js"></script>
+
+    <!-- LOADER JS -->
+    <script src="LoaderCamaras/loader.js"></script>
 </body>
+
+
+<!-- BODY ANTERIOR -->
+<!-- <body> -->
+    <!-- LOADER -->
+    <!-- <div id="loader">
+        <img src="/AssetsInicio/haciendoCursosLogo-SinFondo-LetraAzul-png.png" alt="" class="img-loader">
+        <div class="dot-spinner">
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+        </div>
+    </div> -->
+
+    <!-- <header class="header container">
+        <div>
+            <h1 class="title">CAMARAS DE SEGURIDAD</h1>
+            <a href="/index.html"><button class="btn"><i class="uil uil-corner-up-left-alt icon"></i>Volver al
+                    Inicio</button></a>
+        </div>
+        <hr class="hr">
+    </header> -->
+
+    <!-- <img src="/AssetsInicio/haciendoCursosLogo-SinFondo-LetraAzul-png.png" alt="" class="logotipo"> -->
+
+    <!-- <main class="container"> -->
+        <!-- <section class="div-content"> -->
+            <!-- <article class="container-cards"> -->
+                <!-- <div class="content-card">
+                    <h3 class="subtitle">Contenido del Curso <span>(Actualizado el 9-Sep-24)</span></h3>
+                    <img src="assets/document-icon.svg" alt="" class="img-card">
+                    <div class="containerButtons">
+                        <a href="assets/CamarasDeSeguridad.pdf" download><button class="btn">Material PDF<i
+                                    class="uil uil-file-download icon"></i></button></a>
+                    </div>
+                </div> -->
+                <!-- <div class="container-consulta">
+                    <div class="card-consulta">
+                        <h3>Para problemas, dudas o consultas</h4>
+                            <img src="assets/whatsapp-icon.svg" alt="" class="img-consulta">
+                            <a href="https://chat.whatsapp.com/Cz7ncebH0RQ1jIxDCHcP1i" target="_blank"><button
+                                    class="btn-consulta">Enviar WhatsApp<i class="uil uil-message"></i></button></a>
+                    </div>
+                </div> -->
+                <!-- <div class="ofertasCard">
+                        <h3 class="subtitle">Ofertas</h3>
+                    </div> -->
+            <!-- </article> -->
+        <!-- </section> -->
+
+    <!-- </main> -->
+
+    <!-- Footer -->
+
+    <!-- LOADER JS -->
+    <!-- <script src="LoaderCamaras/loader.js"></script> -->
+<!-- </body> -->
+
 </html>

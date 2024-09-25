@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --h1-fs: 1.8rem;
+    --h3-fs: 1.25rem;
+    --h4-fs: 1rem;
+    --description-fs: .5rem;
+
+    --color-bg: #f7eae5;
+    --color-1: #292929;
+    --color-2: #B7BAD5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    background-color: var(--color-bg);
+}
+
+.hr {
+    border: 1px solid var(--color-2);
+    margin: .5rem 0 1rem 0;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0 10px;
+    background-color: #A2A5C2;
+    color: black;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 8px;
+    transition: .3s ease;
+}
+
+.btn:hover {
+    background-color: var(--color-2);
+    filter: drop-shadow(0px 7px 4px rgba(0, 0, 0, 0.33));
+    cursor: pointer;
+}
+
+/* Iconos de los botones */
+.icon {
+    font-size: 1.5rem;
+}
+
+.header {
+    position: relative;
+    top: 0.5rem;
+}
+
+.header div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sectionLogin {
+    padding: 2rem;
+}
+
+.sectionLogin header {
+    margin-bottom: 1rem;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+}
+
+.container-login {
+    height: 294px;
+    width: 472px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #81849F;
+    border-radius: 12px;
+}
+
+.info-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-login img {
+    border-radius: 112px;
+}
+
+.info-login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form-label {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.container-input input {
+    height: 44px;
+    width: 315px;
+    background-color: rgba(210, 212, 226, 0.4);
+    border: 1px solid #D2D4E2;
+    border-radius: 6px;
+    padding: 3px 16px;
+    font-size: 26px;
+}
+
+.login-form .btn .icon {
+    transform: rotate(180deg);
+}
+
+.icon-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+    z-index: 10;
+}
+
+/* CONTENEDOR DE TARJETA DE OLVIDO DE CONTRASEÑA */
+.container-aviso {
+    position: relative;
+    top: 2rem;
+    height: 80px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #81849F;
+    border-radius: 12px;
+}
+
+#popup {
+    position: relative;
+    top: 2rem;
+    height: 80px;
+    width: 350px;
+    text-align: center;
+    background-color: #81849F;
+    border-radius: 12px;
+    
+}
+
+.container-aviso h4 {
+    font-size: .9rem;
+}
+
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Pantallas medianas */
+@media (max-width: 768px) {
+    .containerCourses {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 40%;
+    }
+}
+
+/* Pantallas chicas */
+@media (max-width: 428px) {
+
+    .header {
+        max-width: 360px;
+    }
+
+    .header .btn {
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    .container-login {
+        width: 360px;
+        height: 294px;
+    }
+
+}
