@@ -263,7 +263,7 @@ footer article {
 /* ========== MEDIA QUERIES ========== */
 
 /* Pantallas medianas */
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .containerCourses {
         flex-wrap: wrap;
     }
@@ -273,8 +273,9 @@ footer article {
     }
 }
 
+
 /* Pantallas chicas */
-@media (max-width: 428px) {
+@media only screen and (max-width: 767px) {
 
     .logotipo {
         width: 100%;

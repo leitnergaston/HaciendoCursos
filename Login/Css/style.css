@@ -168,6 +168,17 @@ body {
     border-radius: 12px;
 }
 
+#popup {
+    position: relative;
+    top: 2rem;
+    height: 80px;
+    width: 350px;
+    text-align: center;
+    background-color: #81849F;
+    border-radius: 12px;
+    
+}
+
 .container-aviso h4 {
     font-size: .9rem;
 }
