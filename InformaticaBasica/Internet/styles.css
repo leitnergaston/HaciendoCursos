@@ -134,6 +134,10 @@ header nav{
     margin: .8rem 0px;
 }
 
+.imgCard {
+    width: 70px;
+}
+
 /* FOOTER */
 
 footer {

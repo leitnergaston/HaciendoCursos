@@ -7,8 +7,11 @@
     <title>Informatica Básica</title>
     <link rel="shortcut icon" href="../img/opción_1__1_-removebg-preview.png" type="image/x-icon">
 
-    <!-- ESTILOS -->
+    <!-- ESTILOS DE LA PAGINA-->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- ESTILOS DEL LOADER -->
+     <link rel="stylesheet" href="Loader/loader.css">
 
     <!-- ICONOS -->
 
@@ -17,6 +20,26 @@
 </head>
 
 <body>
+
+    <!-- LOADER -->
+    <div id="loader">
+        <img src="/img/haciendo-cursos-logo-letras-negras-png.png" alt="logo de fondo" class="img-loader">
+        <div class="dot-spinner">
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+        </div>
+    </div>
+
+    <!-- imagen de fondo -->
+    <img src="/img/haciendo-cursos-logo-letras-negras-png.png" alt="logo de fondo" class="logotipo">
+    
+
     <header class="container">
         <nav>
             <h1 class="title">Informática Básica</h1>
@@ -34,8 +57,8 @@
                 <div class="card">
                     <h3 class="titleContent">Internet</h3>
                     <!-- <h3 class="titleContent">Pc / Internet</h3> -->
-                    <img src="../img/icon básico/iconoir--internet.svg" alt="" class="imgContent">
-                    <a href="#"><button class="btn">No disponible</button></a>
+                    <img src="../img/icon básico/iconoir--internet.svg" alt="icono" class="imgContent">
+                    <a href="Internet/index.html"><button class="btn">Ingresar</button></a>
                 </div>
 
                 <div class="card">
@@ -101,6 +124,9 @@
 
     <!-- MAIN JS -->
      <script src="Js/main.js"></script>
+
+     <!-- LOADER JS -->
+      <script src="Loader/loader.js"></script>
 </body>
 
 </html>
