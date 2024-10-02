@@ -107,9 +107,13 @@ header nav{
 .articleContainer {
     /* border: 1px solid black; */
     border-radius: 6px;
-    background-color: #81849F;
-    opacity: 80%;
+    background-color: hsla(234, 14%, 56%, 0.80);
+    /* opacity: 80%; */
     padding: 25px;
+}
+
+.subtitle {
+    font-size: 15px;
 }
 
 .containerCards{
@@ -137,6 +141,7 @@ header nav{
 .imgCard {
     width: 70px;
 }
+
 
 /* FOOTER */
 

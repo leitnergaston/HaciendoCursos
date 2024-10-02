@@ -47,9 +47,8 @@ body::-webkit-scrollbar-thumb{
     opacity: 8%;
 }
 
-header{
-    /* width: 469px; */
-    padding: 32px;
+.header{
+    padding: 1rem 0;
 }
 
 header nav{
