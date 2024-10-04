@@ -80,9 +80,7 @@ a {
 
 .btn {
     display: inline-block;
-    width: 132px;
     height: 45px;
-    /* line-height: 2em; */
     overflow: hidden;
     cursor: pointer;
     padding: 0 10px;
@@ -102,12 +100,6 @@ a {
     filter: drop-shadow(0px 7px 4px rgba(0, 0, 0, 0.33));
     cursor: pointer;
 }
-
-/* Section Courses */
-/* .section {
-    padding: 2rem;
-} */
-
 
 /* Container Contents */
 .containerContent {
@@ -142,7 +134,7 @@ a {
 }
 
 .imgContent {
-    width: 85px;
+    width: 80px;
 }
 
 /* .card a {
@@ -230,13 +222,25 @@ footer article {
 }
 
 .copy {
-    color: var(--color-text);
+    display: inline-block;
+    position: relative;
+    color: var(--color-primary);
     font-size: 18px;
     font-weight: 500;
-    transition: .2s ease;
 }
 
-.copy:hover {
+.copy:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    transition: all .4s;
+}
+
+.copy:hover:after {
+    width: 100%;
     cursor: pointer;
-    color: var(--color-2);
+    background: #333;
+    text-decoration: underline;
 }

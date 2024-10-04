@@ -4,90 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informatica Basica - Word</title>
+    <link rel="shortcut icon" href="../../img/opción_1__1_-removebg-preview.png" type="image/x-icon">
+    <title>Informatica Basica | Word</title>
 
-    <!-- Estilos Css -->
-    <link rel="stylesheet" href="Css/styles.css">
+    <!-- estilos -->
+    <link rel="stylesheet" href="CssWord/styles.css">
 
     <!-- Iconos -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/img/opción_1__1_-removebg-preview.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/AssetsInicio/opción_1__1_-removebg-preview.png" type="image/x-icon">
 
 </head>
 
+
+
 <body>
-    <!-- HEADER -->
-    <header class="header container">
-        <!-- CONTENEDOR DE TITULO Y BOTON DE INICIO -->
-        <div>
-            <h1 class="title">Informática Básica - Word</h1>
-            <a href="javascript:void(0);" onclick="goBack()"><button class="btn"><i class="uil uil-corner-up-left-alt icon"></i>Atras</button></a>
-        </div>
-        <hr class="hr">
-    </header>
-    <main class="main container">
-        <!-- SECCION QUE CONTIENE AL CONTENEDOR DE LAS CARDS -->
-        <section class="div-content">
-            <!-- CONTENEDOR DE LAS CARDS -->
-            <article class="container-cards">
-                <h3 class="subtitle">Archivos<span>(Actualizado el 26-Sep-24)</span></h3>
+    <div class="bodyContainer">
+        <header class="container">
+            <nav>
+                <h1 class="title">Informática Basica - Microsoft Word</h1>
+                <a href="javascript:void(0);" onclick="goBack()"><button class="btn"><i class="uil uil-corner-up-left-alt icon"></i>Atras</button></a>
+            </nav>
+            <hr class="hr">
+        </header>
 
-                <!-- CARD DE ARCHIVOS -->
-                <div class="card">
-                    <h4 class="minititle">Archivo Word</h4>
-                    <img src="Assets/word-icon.svg" alt="" class="img-card">
-                    <a href="https://1drv.ms/w/s!Al3xWWn6ONYVgSDoziUrygK7l_Wg?e=Vb8Mx3" target="_blank"><button class="btn">Abrir Archivo<i
-                                class="uil uil-arrow-right icon"></i></button></a>
-                </div>
+        <main class="main container">
+            <section class="sectionExcel">
 
-                <!-- CARD INSTRUCCIONES -->
-                <div class="card">
-                    <h4 class="minititle">Instrucciones para descargar archivo</h4>
-                    <img src="Assets/info-icon.svg" alt="" class="img-card">
-                    <a href="#" target="_blank"><button class="btn">No disponible<i 
-                                class="uil uil-arrow-right icon"></i></button></a> <!--Ver instruciones decia el boton-->
-                </div>
+                <article class="articleContainer">
+                    <div class="titleContainer">
+                        <h3 class="titleh3">Archivos de word
+                            <small class="subtitle"> - Actualizado el 3-Oct-24</small>
+                        </h3>
+                    </div>
+                    <!-- contenedor de cards -->
+                    <div class="containerCards">
+                        <!-- card 1 -->
+                        <div class="card">
+                            <h4 class="titleh4">Documento de word completo</h4>
+                            <img src="AssetsWord/word-icon.svg" alt="" class="imgCard">
+                            <a href="https://1drv.ms/w/s!Al3xWWn6ONYVgSdOOvbmaObmcZIu?e=9q8RuN" target="_blank"><button class="btn">Abrir documento<i
+                                        class="uil uil-arrow-right icon"></i></button></a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <article>
+                <p class="update" id="footer-date">Fecha de actualizacion aqui</p>
+                <p>
+                    <small>
+                        <a href="https://leitnergaston.netlify.app" target="_blank" class="copy">Leitner</a>
+                        |
+                        <a href="https://gonzalescamila.netlify.app" target="_blank" class="copy">Gonzales</a>
+                    </small>
+                </p>
             </article>
-            
-            
-
-            <!-- SEPARADOR DE CONTENEDOR DE CARDS -->
-            <hr>
-        </section>
-
-        <!-- Tarjeta de consulta -->
-        <!-- div que contiene la card de consulta -->
-        <!-- <div class="container-consulta">
-            <div class="card-consulta">
-                <h3>Para problemas, dudas o consultas</h4>
-                    <img src="/AssetsInicio/whatsappIcon.svg" alt="icono whatsapp" class="img-consulta">
-                    <a href="https://chat.whatsapp.com/ImbUoq0azufE8SErxm10uP" target="_blank"><button class="btn-consulta">Enviar WhatsApp<i class="uil uil-message"></i></button></a>
-            </div>
-        </div> -->
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <article>
-            <p class="update" id="footer-date">Fecha de actualizacion automatica</p>
-            <p>
-                <small>
-                    <a href="https://leitnergaston.netlify.app" target="_blank" class="copy">Leitner</a>
-                    |
-                    <a href="https://gonzalescamila.netlify.app" target="_blank" class="copy">Gonzales</a>
-                </small>
-            </p>
-        </article>
-    </footer>
+        </footer>
+    </div>
 
     <!-- FOOTER JS -->
     <script src="/footer.js"></script>
 
     <!-- MAIN JS -->
-     <script src="../Js/main.js"></script>
-    
+    <script src="../JsInfoBasic/main.js"></script>
+
 </body>
 
 </html>
