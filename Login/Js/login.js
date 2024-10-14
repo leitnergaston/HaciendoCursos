@@ -29,9 +29,9 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
 
     // Objeto con las contraseñas y las rutas a las páginas correspondientes
     var passwords = {
-        "Infobasic.24": "/InformaticaBasica/index.html",
-        "Infointer-24": "/InformaticaIntermedia/index.html",
-        "we.2024": "/WordYExcel/index.html",
+        "Infobasic.24": "/InformaticaBasica/informaticaBasica.html",
+        "Infointer-24": "/InformaticaIntermedia/informaticaIntermedia.html",
+        "we.2024": "/WordYExcel/wordexcel.html",
         "Camseg24": "/CamarasSeguridad/index.html"
     };
 

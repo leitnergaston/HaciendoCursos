@@ -28,7 +28,7 @@ body {
     background-color: var(--color-bg);
 }
 
-/* SCROLL BAR */
+/* ========== SCROLL BAR ========== */
 body::-webkit-scrollbar {
     width: 9px;
 }
@@ -43,22 +43,26 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 1rem;
 }
 
+/* BTN 1 */
+
 .btn {
-    display: inline-block;
-    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
     height: 45px;
-    line-height: 2em;
     overflow: hidden;
     cursor: pointer;
     padding: 0 10px;
     z-index: 1;
-    background-color: #A2A5C2;
+    background-color: #a8abc8;
     color: black;
-    font-size: 20px;
+    font-size: 17px;
     border: 1px solid black;
     border-radius: 8px;
     position: relative;
     transition: .3s ease;
+    margin: 10px 0px;
 }
 
 .btn:hover {
@@ -66,6 +70,62 @@ body::-webkit-scrollbar-thumb {
     filter: drop-shadow(0px 7px 4px rgba(0, 0, 0, 0.33));
     cursor: pointer;
 }
+
+/* BTN 2 */
+.btn-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 45px;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0 10px;
+    z-index: 1;
+    background-color: #a8abc8;
+    color: black;
+    font-size: 17px;
+    border: 1px solid black;
+    border-radius: 8px;
+    position: relative;
+    transition: .3s ease;
+    margin: 10px 0px;
+}
+
+.btn-2:hover {
+    background-color: var(--color-2);
+    filter: drop-shadow(0px 7px 4px rgba(0, 0, 0, 0.33));
+    cursor: pointer;
+}
+
+/* BTN 3 */
+.btn-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 45px;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0 10px;
+    z-index: 1;
+    background-color: #a8abc8;
+    color: black;
+    font-size: 17px;
+    border: 1px solid black;
+    border-radius: 8px;
+    position: relative;
+    transition: .3s ease;
+    margin: 10px 0px;
+}
+
+.btn-3:hover {
+    background-color: var(--color-2);
+    filter: drop-shadow(0px 7px 4px rgba(0, 0, 0, 0.33));
+    cursor: pointer;
+}
+
+
 
 .container {
     width: 100%;
@@ -75,7 +135,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Section Courses */
 .section {
-    padding: 2rem;
+    padding: 1rem;
 }
 
 /* .courses {} */
@@ -102,10 +162,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Container Courses */
-.containerCourses {
+.container-content {
     max-width: 1200px;
     width: 100%;
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
@@ -114,7 +174,7 @@ body::-webkit-scrollbar-thumb {
 
 .card {
     width: 255px;
-    height: 300px;
+    height: 265px;
     background-color: #B7BAD5;
     border-radius: 6px;
     display: flex;
@@ -124,7 +184,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-around;
 }
 
-.titleCourse {
+.title-content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,13 +193,10 @@ body::-webkit-scrollbar-thumb {
     font-size: var(--h3-font-size);
 }
 
-.imgCourse {
-    width: 100px;
+.img-content {
+    width: 80px;
 }
 
-.card a {
-    margin: 20px;
-}
 
 /* ========== SECCION CONTACTO ========== */
 
@@ -318,5 +375,75 @@ footer article {
     textarea {
         max-width: 328px;
     }
-    
+
+}
+
+
+
+/* ========== PAGINA INFORMATICA BASICA ========== */
+.header {
+    padding: 1rem 0;
+}
+
+.header nav {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+/* ========== INFORMATICA BASICA | INTERNET-IA-PowerPoint-Word-Excel ========== */
+.body-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.article-container {
+    border-radius: 6px;
+    background-color: hsla(234, 14%, 56%, 0.80);
+    padding: 25px;
+}
+
+.subtitle-article {
+    font-size: 15px;
+}
+
+
+/* ===== CARDS ===== */
+
+.container-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.content-card {
+    width: 250px;
+    height: 260px;
+    background-color: #B7BAD5;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    text-align: center;
+    margin: .8rem 0px;
+}
+
+.img-card {
+    width: 70px;
+}
+
+/* Iconos de los botones */
+.icon {
+    font-size: 1.5rem;
 }
