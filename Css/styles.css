@@ -138,8 +138,6 @@ body::-webkit-scrollbar-thumb {
     padding: 1rem;
 }
 
-/* .courses {} */
-
 .section header {
     margin-bottom: 1rem;
     display: flex;
@@ -267,9 +265,13 @@ textarea.input {
 /*========== FOOTER ==========*/
 
 footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 1rem;
     color: #292929;
 }
 
@@ -283,7 +285,6 @@ footer article {
     font-size: 20px;
     border-radius: 30px 30px 0 0;
     background: #A2A5C2;
-    line-height: 22px;
 }
 
 .update {

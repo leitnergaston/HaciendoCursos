@@ -204,15 +204,14 @@ body {
 }
 
 
-
-
-
-
-
 /*========== FOOTER ==========*/
 
 footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
     margin-top: 1rem;
     color: #292929;
@@ -296,7 +295,7 @@ footer article {
     }
 
     .btn {
-        font-size: 14px; 
+        font-size: 14px;
     }
 
     /* Iconos de los botones */
