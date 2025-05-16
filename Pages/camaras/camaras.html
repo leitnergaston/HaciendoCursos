@@ -7,7 +7,7 @@
     <title>HC | Camaras Seguridad</title>
 
     <!-- ESTILOS -->
-    <link rel="stylesheet" href="/Css/camaras.css">
+    <link rel="stylesheet" href="/Css/styles.css">
 
     <!-- ESTILOS LOADER -->
     <link rel="stylesheet" href="/Css/loader.css">
@@ -22,9 +22,10 @@
 </head>
 
 <body>
+
     <!-- LOADER -->
     <div id="loader">
-        <img src="/Assets/haciendo-cursos-logo-letras-negras-png.png" alt="" class="img-loader">
+        <img src="/Assets/haciendo-cursos-logo-letras-negras-png.png" alt="loader" class="img-loader">
         <div class="dot-spinner">
             <div class="dot-spinner__dot"></div>
             <div class="dot-spinner__dot"></div>
@@ -37,79 +38,93 @@
         </div>
     </div>
 
-    <img src="/Assets/haciendo-cursos-logo-letras-negras-png.png" alt="" class="logotipo">
+    <!-- imagen de fondo -->
+    <img src="/Assets/haciendo-cursos-logo-letras-negras-png.png" alt="logo de fondo" class="logotipo">
 
-    <header class="header container">
-        <div>
-            <h1 class="title">Camaras de Seguridad</h1>
-            <a href="/index.html"><button class="btn"><i class="uil uil-corner-up-left-alt icon"></i>Volver al
-                    Inicio</button></a>
-        </div>
-        <hr class="hr">
-    </header>
-    <main class="container">
-        <section class="div-content">
-            <article class="container-cards">
-                <h3 class="subtitle">Material del curso <span>(Actualizado el 7-May-25)</span></h3>
+    <div class="body-container">
 
-                <!-- Card archivo pdf -->
-                <div class="card">
-                    <h4 class="minititle">Archivo PDF Completo</h4>
-                    <img src="/Assets/camaras/document-icon.svg" alt="" class="img-card">
-                    <a href="https://drive.google.com/file/d/14HICtdo2TxKOpSv14zwz5bNYR1_httRo/view?usp=sharing"
-                        target="_blank"><button class="btn">Abrir PDF<i
-                                class="uil uil-arrow-right icon"></i></button></a>
-                </div>
+        <!-- HEADER -->
+        <header class="header container">
+            <nav>
+                <h1 class="title">Camaras de Seguridad</h1>
+                <a href="javascript:void(0);" onclick="goBack()"><button class="btn-2"><i
+                            class="uil uil-corner-up-left-alt icon"></i>Atras</button></a>
+            </nav>
+            <hr class="hr">
+        </header>
 
-                <!-- Card programa ver dvr en pc -->
-                <div class="card">
-                    <h4 class="minititle">iVMS-4200 V3.12.2.3 (DVR)</h4>
-                    <img src="/Assets/camaras/ivms4200-icon.png" alt="" class="img-card">
-                    <a href="https://drive.google.com/file/d/1kXQNr3-IDX3PCSR08E-awpnSEEcP32lf/view?usp=sharing"
-                        target="_blank"><button class="btn">Descargar Programa<i
-                                class="uil uil-file-download icon"></i></button></a>
-                </div>
+        <!-- MAIN -->
+        <main class="main container">
+            <section class="section-container">
 
-                <!-- Card programa vms camaras wifi -->
-                <div class="card">
-                    <h4 class="minititle">VMS Lite 8.2.44.2 (Camaras WIFI)</h4>
-                    <img src="/Assets/camaras/vmslite-icon.png" alt="" class="img-card">
-                    <a href="https://drive.google.com/file/d/17C1ek11PBMt0znoOvJnnCPszxOlRxieF/view?usp=sharing"
-                        target="_blank"><button class="btn">Descargar Programa<i
-                                class="uil uil-file-download icon"></i></button></a>
-                </div>
+                <article class="article-container">
+                    <div class="titles-container">
+                        <h3 class="title-article">Contenido del curso
+                            <small class="subtitle-article"> - Actualizado el 7-May-25</small>
+                        </h3>
+                    </div>
+                    <!-- contenedor de cards -->
+                    <div class="container-cards">
+                        <!-- card 1 -->
+                        <div class="content-card">
+                            <h4 class="title-card">Archivo PDF del curso</h4>
+                            <img src="/Assets/camaras/document-icon.svg" alt="" class="img-card">
+                            <a href="https://drive.google.com/file/d/14HICtdo2TxKOpSv14zwz5bNYR1_httRo/view?usp=sharing" target="_blank">
+                                <button class="btn-2">Abrir Documento</button>
+                            </a>
+                        </div>
 
-                <!-- Card instrucciones -->
-                <!-- <div class="card">
-                    <h4 class="minititle">Instrucciones para descargar archivo</h4>
-                    <img src="assets/info-icon.svg" alt="" class="img-card">
-                    <a href="assets/intruccionesDescargarPdf.pdf" target="_blank"><button class="btn">Ver Instrucciones<i
-                                class="uil uil-arrow-right icon"></i></button></a>
-                </div> -->
+                        <div class="content-card">
+                            <h4 class="title-card">iVMS-4200 V3.12.2.3 (DVR)</h4>
+                            <img src="/Assets/camaras/ivms4200-icon.png" alt="" class="img-card">
+                            <a href="https://drive.google.com/file/d/1kXQNr3-IDX3PCSR08E-awpnSEEcP32lf/view?usp=sharing" target="_blank">
+                                <button class="btn-2">Descargar programa</button>
+                            </a>
+                        </div>
 
-            </article>
+                        <div class="content-card">
+                            <h4 class="title-card">VMS Lite 8.2.44.2 (camaras wifi)</h4>
+                            <img src="/Assets/camaras/vmslite-icon.png" alt="" class="img-card">
+                            <a href="https://drive.google.com/file/d/17C1ek11PBMt0znoOvJnnCPszxOlRxieF/view?usp=sharing" target="_blank">
+                                <button class="btn-2">Descargar programa</button>
+                            </a>
+                        </div>
 
-            <hr>
+                        <div class="content-card">
+                            <h4 class="title-card">Calculo almacenamiento DVR Pag 1</h4>
+                            <a href="https://www.westerndigital.com/tools/surveillance-capacity-calculator" target="_blank">
+                                <button class="btn-2">Link</button>
+                            </a>
+                        </div>
 
-        </section>
+                        <div class="content-card">
+                            <h4 class="title-card">Calculo almacenamiento DVR Pag 2</h4>
+                            <a href="https://tools.hikvision.com/calculatorTool/#/" target="_blank">
+                                <button class="btn-2">Link</button>
+                            </a>
+                        </div>
 
-        <!-- Tarjeta de consulta -->
-        <!-- div que contiene la card de consulta -->
-        <!-- <div class="container-consulta">
-            <div class="card-consulta">
-                <h3>Para problemas, dudas o consultas</h4>
-                    <img src="assets/whatsapp-icon.svg" alt="" class="img-consulta">
-                    <a href="https://chat.whatsapp.com/Cz7ncebH0RQ1jIxDCHcP1i" target="_blank"><button
-                            class="btn-consulta">Enviar WhatsApp<i class="uil uil-message"></i></button></a>
-            </div>
-        </div> -->
+                        <div class="content-card">
+                            <h4 class="title-card">Calculo almacenamiento DVR Pag 3</h4>
+                            <a href="https://www.cpplusworld.com/hdd-calculator" target="_blank">
+                                <button class="btn-2">Link</button>
+                            </a>
+                        </div>
+
+                    </div>
+                </article>
+
+            </section>
+        </main>
 
 
+    </div>
 
-    </main>
-
-    <!-- LOADER JS -->
+    <!-- Loader Js -->
     <script src="/Js/loader.js"></script>
+
+    <!-- Main JS -->
+    <script src="/Js/main.js"></script>
 </body>
 
 
