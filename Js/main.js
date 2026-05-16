@@ -1,7 +1,7 @@
 // Funcion para volver a la pagina anterior sin tener que poner la ruta manualmente en el href
-function goBack() {
-    window.history.back();
-}
+// function goBack() {
+//     window.history.back();
+// }
 
 
 // probando scroll reveal con deploy en netlify

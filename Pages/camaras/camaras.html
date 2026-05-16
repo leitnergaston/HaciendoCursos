@@ -1,160 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HC | Camaras Seguridad</title>
+    <title>HC | Camaras de Seguridad</title>
 
-    <!-- ESTILOS -->
-    <link rel="stylesheet" href="/Css/styles.css">
+    <link rel="stylesheet" href="/Css/camaras.css">
 
-    <!-- ESTILOS LOADER -->
-    <link rel="stylesheet" href="/Css/loader.css">
-
-    <!-- ICONOS -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-
-    <!-- FAVICON -->
-    <link rel="shortcut icon" href="/Assets/haciendoCursosSinFondoLogo.png" type="image/x-icon">
-
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 
 </head>
-
 <body>
-
-    <!-- LOADER -->
-    <div id="loader">
-        <img src="/Assets/haciendo-cursos-logo-letras-negras-png.png" alt="loader" class="img-loader">
-        <div class="dot-spinner">
-            <div class="dot-spinner__dot"></div>
-            <div class="dot-spinner__dot"></div>
-            <div class="dot-spinner__dot"></div>
-            <div class="dot-spinner__dot"></div>
-            <div class="dot-spinner__dot"></div>
-            <div class="dot-spinner__dot"></div>
-            <div class="dot-spinner__dot"></div>
-            <div class="dot-spinner__dot"></div>
+    <header class="header">
+        <div class="header-left">
+            <div class="header-icon"></div>
+            <h1>Cámaras de Seguridad</h1>
         </div>
-    </div>
+        <a href="/index.html" class="btn-back">← Atrás</a>
+    </header>
 
-    <!-- imagen de fondo -->
-    <img src="/Assets/haciendo-cursos-logo-letras-negras-png.png" alt="logo de fondo" class="logotipo">
+    <main class="main">
+        <div class="section-header">
+            <div class="section-title">Contenido del curso</div>
+            <div class="section-date">Última actualizacion el 11-Mayo-2026</div>
+        </div>
 
-    <div class="body-container">
+        <div class="grid">
 
-        <!-- HEADER -->
-        <header class="header container">
-            <nav>
-                <h1 class="title">Camaras de Seguridad</h1>
-                <a href="javascript:void(0);" onclick="goBack()"><button class="btn-2"><i
-                            class="uil uil-corner-up-left-alt icon"></i>Atras</button></a>
-            </nav>
-            <hr class="hr">
-        </header>
+            <div class="section-group-label">Recursos</div>
 
-        <!-- MAIN -->
-        <main class="main container">
-            <section class="section-container">
-
-                <article class="article-container">
-                    <div class="titles-container">
-                        <h3 class="title-article">Contenido del curso
-                            <small class="subtitle-article"> - Actualizado el 3-Jun-25</small>
-                        </h3>
-                    </div>
-                    <!-- contenedor de cards -->
-                    <div class="container-cards">
-                        <!-- card 1 -->
-                        <div class="content-card">
-                            <h4 class="title-card">Archivo PDF del curso</h4>
-                            <img src="/Assets/camaras/document-icon.svg" alt="" class="img-card">
-                            <a href="https://drive.google.com/file/d/1fltXB8UKhPnvBFQJJqbvpLyp8S5kB47m/view?usp=sharing" target="_blank">
-                                <button class="btn-2">Abrir Documento</button>
-                            </a>
-                        </div>
-
-                        <div class="content-card">
-                            <h4 class="title-card">iVMS-4200 V3.12.2.3 (DVR)</h4>
-                            <img src="/Assets/camaras/ivms4200-icon.png" alt="" class="img-card">
-                            <a href="https://drive.google.com/file/d/1kXQNr3-IDX3PCSR08E-awpnSEEcP32lf/view?usp=sharing" target="_blank">
-                                <button class="btn-2">Descargar programa</button>
-                            </a>
-                        </div>
-
-                        <div class="content-card">
-                            <h4 class="title-card">VMS Lite 8.2.44.2 (camaras wifi)</h4>
-                            <img src="/Assets/camaras/vmslite-icon.png" alt="" class="img-card">
-                            <a href="https://drive.google.com/file/d/17C1ek11PBMt0znoOvJnnCPszxOlRxieF/view?usp=sharing" target="_blank">
-                                <button class="btn-2">Descargar programa</button>
-                            </a>
-                        </div>
-
-                        <div class="content-card">
-                            <h4 class="title-card">Calculo almacenamiento DVR/NVR</h4>
-                            <img src="/Assets/camaras/hdd-icon.png" alt="" class="img-card">
-                            <a href="https://www.westerndigital.com/tools/surveillance-capacity-calculator" target="_blank">
-                                <button class="btn-2">Link</button>
-                            </a>
-                        </div>
-
-                        <div class="content-card">
-                            <h4 class="title-card">Presupuesto PC editable word</h4>
-                            <img src="/Assets/camaras/word-icon.svg" alt="" class="img-card">
-                            <a href="/Assets/camaras/Presupuesto PC.docx" download>
-                                <button class="btn-2">Descargar documento</button>
-                            </a>
-                        </div>
-
-                        <div class="content-card">
-                            <h4 class="title-card">Presupuesto PC PDF</h4>
-                            <img src="/Assets/camaras/pdf-icon.svg" alt="" class="img-card">
-                            <a href="/Assets/camaras/Presupuesto PC.pdf" download>
-                                <button class="btn-2">Descargar PDF</button>
-                            </a>
-                        </div>
-
-                        <div class="content-card">
-                            <h4 class="title-card">Presupuesto Imprimible editable word</h4>
-                            <img src="/Assets/camaras/word-icon.svg" alt="" class="img-card">
-                            <a href="/Assets/camaras/Presupuesto Imprimible.docx" download>
-                                <button class="btn-2">Descargar documento</button>
-                            </a>
-                        </div>
-
-                        <div class="content-card">
-                            <h4 class="title-card">Presupuesto Imprimible PDF</h4>
-                            <img src="/Assets/camaras/pdf-icon.svg" alt="" class="img-card">
-                            <a href="/Assets/camaras/Presupuesto Imprimible.pdf" download>
-                                <button class="btn-2">Descargar PDF</button>
-                            </a>
-                        </div>
-
-                        <div class="content-card">
-                            <h4 class="title-card">Examen</h4>
-                            <img src="" alt="" class="img-card">
-                            <a href="https://forms.gle/LwZ1ttrKHdH2WgGq5">
-                                <button class="btn-2">Ingresar</button>
-                            </a>
-                        </div>
-
-
-
-                    </div>
-                </article>
-
-            </section>
-        </main>
-
-
-    </div>
-
-    <!-- Loader Js -->
-    <script src="/Js/loader.js"></script>
-
-    <!-- Main JS -->
-    <script src="/Js/main.js"></script>
+            <div class="card">
+                <div class="card-title">Archivo PDF del curso</div>
+                <div class="card-icon"></div>
+                <button class="card-btn" onclick="window.open('https://drive.google.com/file/d/1qzqrEjN-YQsW2eZcAcAzxsk51Jfm_B4S/view?usp=sharing')">Abrir documento</button>
+            </div>
+        </div>
+    </main>
 </body>
-
-
 </html>
