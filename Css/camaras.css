@@ -226,6 +226,10 @@ body {
     transition: transform 0.2s ease;
 }
 
+.img-card {
+    width: 50px;
+}
+
 .card:hover .card-icon {
     transform: scale(1.06);
 }
